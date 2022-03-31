@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Books</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/dalek" rel="stylesheet">
+  
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/harry-potter');
+    @import url('http://fonts.cdnfonts.com/css/dalek');
+  </style>
+
+<!-- jQuery -->
+  <script>
+
+    $(document).ready(function(){
+      $("#books").hide();
+      $("#t-1").hide();
+      $("#t-2").hide();
+
+      $("#hp-0").hide();
+      $("#hp-1").hide();
+      $("#hp-2").hide();
+      $("#hp-3").hide();
+      $("#hp-4").hide();
+      $("#hp-5").hide();
+      $("#hp-6").hide();
+      $("#hp-7").hide();
+
+      $("#pj-0").hide();
+      $("#pj-1").hide();
+      $("#pj-2").hide();
+      $("#pj-3").hide();
+      $("#pj-4").hide();
+      $("#pj-5").hide();
+
+      $("#hoo-0").hide();
+      $("#hoo-1").hide();
+      $("#hoo-2").hide();
+      $("#hoo-3").hide();
+      $("#hoo-4").hide();
+      $("#hoo-5").hide();
+    });
+
+    $(document).ready(function(){
+      $("#hp0").mouseenter(function(){
+        $("#hp-0").fadeIn(1000);
+      });
+      $("#hp1").mouseenter(function(){
+        $("#hp-1").fadeIn(1000);
+      });
+      $("#hp2").mouseenter(function(){
+        $("#hp-2").fadeIn(1000);
+      });
+      $("#hp3").mouseenter(function(){
+        $("#hp-3").fadeIn(1000);
+      });
+      $("#hp4").mouseenter(function(){
+        $("#hp-4").fadeIn(1000);
+      });
+      $("#hp5").mouseenter(function(){
+        $("#hp-5").fadeIn(1000);
+      });
+      $("#hp6").mouseenter(function(){
+        $("#hp-6").fadeIn(1000);
+      });
+      $("#hp7").mouseenter(function(){
+        $("#hp-7").fadeIn(1000);
+      });
+
+      $("#pj0").mouseenter(function(){
+        $("#pj-0").slideDown(1000);
+      });
+      $("#pj1").mouseenter(function(){
+        $("#pj-1").slideDown(1000);
+      });
+      $("#pj2").mouseenter(function(){
+        $("#pj-2").slideDown(1000);
+      });
+      $("#pj3").mouseenter(function(){
+        $("#pj-3").slideDown(1000);
+      });
+      $("#pj4").mouseenter(function(){
+        $("#pj-4").slideDown(1000);
+      });
+      $("#pj5").mouseenter(function(){
+        $("#pj-5").slideDown(1000);
+      });
+
+      $("#hoo0").mouseenter(function(){
+        $("#hoo-0").slideDown(1000);
+      });
+      $("#hoo1").mouseenter(function(){
+        $("#hoo-1").slideDown(1000);
+      });
+      $("#hoo2").mouseenter(function(){
+        $("#hoo-2").slideDown(1000);
+      });
+      $("#hoo3").mouseenter(function(){
+        $("#hoo-3").slideDown(1000);
+      });
+      $("#hoo4").mouseenter(function(){
+        $("#hoo-4").slideDown(1000);
+      });
+      $("#hoo5").mouseenter(function(){
+        $("#hoo-5").slideDown(1000);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#hp0").mouseleave(function(){
+        $("#hp-0").slideUp(1000);
+      });
+      $("#hp1").mouseleave(function(){
+        $("#hp-1").slideUp(1000);
+      });
+      $("#hp2").mouseleave(function(){
+        $("#hp-2").slideUp(1000);
+      });
+      $("#hp3").mouseleave(function(){
+        $("#hp-3").slideUp(1000);
+      });
+      $("#hp4").mouseleave(function(){
+        $("#hp-4").slideUp(1000);
+      });
+      $("#hp5").mouseleave(function(){
+        $("#hp-5").slideUp(1000);
+      });
+      $("#hp6").mouseleave(function(){
+        $("#hp-6").slideUp(1000);
+      });
+      $("#hp7").mouseleave(function(){
+        $("#hp-7").slideUp(1000);
+      });
+
+      $("#pj0").mouseleave(function(){
+        $("#pj-0").fadeOut(1000);
+      });
+      $("#pj1").mouseleave(function(){
+        $("#pj-1").fadeOut(1000);
+      });
+      $("#pj2").mouseleave(function(){
+        $("#pj-2").fadeOut(1000);
+      });
+      $("#pj3").mouseleave(function(){
+        $("#pj-3").fadeOut(1000);
+      });
+      $("#pj4").mouseleave(function(){
+        $("#pj-4").fadeOut(1000);
+      });
+      $("#pj5").mouseleave(function(){
+        $("#pj-5").fadeOut(1000);
+      });
+
+      $("#hoo0").mouseleave(function(){
+        $("#hoo-0").slideUp(1000);
+      });
+      $("#hoo1").mouseleave(function(){
+        $("#hoo-1").slideUp(1000);
+      });
+      $("#hoo2").mouseleave(function(){
+        $("#hoo-2").slideUp(1000);
+      });
+      $("#hoo3").mouseleave(function(){
+        $("#hoo-3").slideUp(1000);
+      });
+      $("#hoo4").mouseleave(function(){
+        $("#hoo-4").slideUp(1000);
+      });
+      $("#hoo5").mouseleave(function(){
+        $("#hoo-5").slideUp(1000);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#home").mouseenter(function(){
+        $("#books").slideDown(1000);
+        $("#t-1").slideDown(1000);
+        $("#t-2").slideDown(1000);
+      });
+    });
+
+  </script>
+
+<!-- CSS -->
+<style>
+  body {
+    background-image: url('books.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #books {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 400%;
+  }
+
+  #t-1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 130%;
+  }
+
+  #t-2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 130%;
+  }
+  </style>
+
+</head>
+
+<!-- Navigation Bar -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid row">
+    <div class="col-sm-10">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#hp">Harry Potter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pj">Percy Jackson</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#hoo">Heroes Of Olympus</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-2">
+    <button type="button" onclick="playAudio()" class="btn btn-dark">Play Audio</button>
+    <button type="button" onclick="pauseAudio()" class="btn btn-dark">Pause Audio</button>
+  </div>
+  </div>
+</nav>
+
+<!-- Audio -->
+<audio id="myAudio">
+  <source src="audio/hedwigs_theme.mp3">
+</audio>
+
+<script>
+  var x = document.getElementById("myAudio"); 
+  
+  function playAudio() { 
+    x.play(); 
+  } 
+  
+  function pauseAudio() { 
+    x.pause(); 
+  } 
+  </script>
+
+<!-- Home Page -->
+<div id="home" class="container-fluid" style="padding:100px 20px; height:745px; color:white; text-shadow: 2px 2px 4px #000000; letter-spacing: 1px;">
+  <h1 id="books" class="text-center">Books</h1> <br> <br>
+  <h5 id="t-1" class="p-3">Books play a quintessential role in every student’s life by introducing them to a world of imagination, providing knowledge of the outside world, improving their reading, writing and speaking skills as well as boosting memory and intelligence. The importance of books in our life cannot be undermined for they not only help in broadening our horizons but also act as doorways of connecting us with the world around us. They function as survival kits, they influence us and leave an impact on us.</h5>
+  <h5 id="t-2" class="p-3">As a teenager I used to read a lot of books. I loved getting lost in the authour's imagination and surf through the fictional world, meeting all kinds of characters. These books and their characters taught me many life lessons that I try my best to implement everyday. So here are a few amazing books that I read in my early-teenage years that left a powerful impact on me and the important lessons I lernt by reading them.</h5>
+</div>
+
+<!-- Carousel HP -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-ride="10000"  style="font-family: 'Harry Potter', sans-serif;">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner" id="hp" style="text-shadow: 2px 2px 4px #000000; letter-spacing: 2px;">
+    <div id="hp0" class="carousel-item active">
+      <img src="bgimg/platform.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-0" class="row">
+          <h1  style="font-size: 400%;">Harry Potter</h1>
+          <br> <br> <br>
+          <div style="font-size: 120%;" class="p-2"> <p> The central character in the series is Harry Potter, a boy who lives in the fictional town of Little Whinging, Surrey with his aunt, uncle, and cousin – the Dursleys – and discovers at the age of eleven that he is a wizard, though he lives in the ordinary world of non-magical people known as Muggles. The wizarding world exists parallel to the Muggle world, albeit hidden and in secrecy. His magical ability is inborn, and children with such abilities are invited to attend exclusive magic schools that teach the necessary skills to succeed in the wizarding world. </p> </div>
+          <div style="font-size: 120%;" class="p-2"> <p> Harry becomes a student at Hogwarts School of Witchcraft and Wizardry, a wizarding academy in Scotland, and it is here where most of the events in the series take place. As Harry develops through his adolescence, he learns to overcome the problems that face him: magical, social, and emotional, including ordinary teenage challenges such as friendships, infatuation, romantic relationships, schoolwork and exams, anxiety, depression, stress, and the greater test of preparing himself for the confrontation that lies ahead in wizarding Britain's increasingly-violent second wizarding war. </p> </div>
+        </div>
+      </div>
+    </div>
+    <div id="hp1" class="carousel-item">
+      <img src="bgimg/hagrid_brings_harry.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-1" class="row">
+          <h1 style="font-size: 300%;">Harry Potter and the Philosopher's Stone</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/51UoqRAxwEL.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Philosopher's Stone"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>It does not do to dwell on dreams and forget to live.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Albus Dumbledore in <cite title="Source Title">Harry Potter and the Philosopher's Stone</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>It’s important to remain humble</li>
+                <li>Love conquers hate</li>
+                <li>Friendship and loyalty beats wealth and status</li>
+                <li>Standing up for yourself is tough, but rewarding</li>
+                <li>Don’t be afraid to ask for help</li>
+                <li>Stay away from three-headed dogs</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="hp2" class="carousel-item">
+      <img src="bgimg/diagon_alley.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-2" class="row">
+          <h1 style="font-size: 300%;">Harry Potter and the Chamber of Secrets</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/51TA3VfN8RL.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Chamber of Secrets"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>It is our choices, Harry, that show what we truly are, far more than our abilities.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Albus Dumbledore in <cite title="Source Title">Harry Potter and the Chamber of Secrets</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Someone's background does not determine his or her value as a person</li>
+                <li>Don't underestimate anyone based on size or appearance</li>
+                <li>Actions do not always equal intentions</li>
+                <li>Be wary of who you open yourself up to</li>
+                <li>Good looks aren't everything</li>
+                <li>Probably don't follow the spiders, ever</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div id="hp3" class="carousel-item">
+      <img src="bgimg/dementors.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-3" class="row">
+          <h1 style="font-size: 300%;">Harry Potter and the Prisoner of Azkaban</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/51Dfqo6jR5L.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Prisoner of Azkaban"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Albus Dumbledore in <cite title="Source Title">Harry Potter and the Prisoner of Azkaban</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Savor the small triumphs</li>
+                <li>Accept your limitations</li>
+                <li>Hold on to the good in your life</li>
+                <li>Life can be unfair</li>
+                <li>Create your own future</li>
+                <li>Punching Malfoy feels amazing</li>
+              </ul>
+            </p>          
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="hp4" class="carousel-item">
+      <img src="bgimg/little_hangleton.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-4" class="row">
+          <h1 style="font-size: 300%;">Harry Potter and the Goblet of Fire</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/51Vjb2qJwzL.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Goblet of Fire"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Sirius Black in <cite title="Source Title">Harry Potter and the Goblet of Fire</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Things are not always as they seem</li>
+                <li>Play to your strengths</li>
+                <li>Give without expecting anything in return</li>
+                <li>Be willing to ask for help</li>
+                <li>We are responsible for ourselves</li>
+                <li>Double check before entering your name anywhere</li>
+              </ul>
+            </p>          
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="hp5" class="carousel-item">
+      <img src="bgimg/ministry_of_magic.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-5" class="row">
+          <h1 style="font-size: 300%;">Harry Potter and the Order of the Phoenix</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/51-SI2+aQ2L.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Order of the Phoenix"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>Indifference and neglect often do much more damage than outright dislike.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Albus Dumbledore in <cite title="Source Title">Harry Potter and the Order of the Phoenix</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Everything in life takes time</li>
+                <li>Don’t dwell on negative energy from others</li>
+                <li>Pain is inevitable in life</li>
+                <li>Treat people the way you want to be treated</li>
+                <li>Support others in their own life endeavors</li>
+                <li>Don't let people like Malfoy know about Dumbledore's Army</li>
+              </ul>
+            </p>          
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="hp6" class="carousel-item">
+      <img src="bgimg/inferi.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-6" class="row">
+          <h1 style="font-size: 300%;">Harry Potter and the Half-Blood Prince</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/51myHyjJsyL.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Half Blood Prince"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>It is the unknown we fear when we look upon death and darkness, nothing more.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Albus Dumbledore in <cite title="Source Title">Harry Potter and the Half-Blood Prince</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Be curious about the world</li>
+                <li>Fight jealousy to the tooth-and-nail</li>
+                <li>Be humble</li>
+                <li>Apply what you have learned</li>
+                <li>Give praise often to others</li>
+                <li>Dumbledore is the best... Period</li>
+              </ul>
+            </p>          
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="hp7" class="carousel-item">
+      <img src="bgimg/deathly_hallows.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hp-7" class="row">
+          <h1>Harry Potter and the Deathly Hallows</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="https://m.media-amazon.com/images/I/511DhzIj4cL.jpg" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Deathly Hallows"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%; letter-spacing: 2px;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>Do not pity the dead, Harry. Pity the living, and, above all those who live without love.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Albus Dumbledore in <cite title="Source Title">Harry Potter and the Deathly Hallows</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Look for the good in others</li>
+                <li>Everything happens for a reason</li>
+                <li>There are two sides to every story, and every perspective is valid and sound</li>
+                <li>Trust your intuition</li>
+                <li>Be a person of integrity</li>
+                <li>Snape is the best person... Period</li>
+              </ul>
+            </p>          
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Carousel PJ -->
+<div id="demo1" class="carousel slide" data-bs-ride="carousel" data-bs-ride="10000" style="font-family: 'Dalek', sans-serif;">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo1" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo1" data-bs-slide-to="5"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner" id="pj"  style="text-shadow: 2px 2px 4px #000000; letter-spacing: 1px;">
+    <div id="pj0" class="carousel-item active">
+      <img src="bgimg/poseidon.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="pj-0" class="row">
+          <h1 style="font-size: 400%;">Percy Jackson & the Olympians</h1>
+          <div class="p-3" style="font-size: 110%;">Set in the mid-2000s, the series follows the story of Percy Jackson, a boy who discovers he is a demigod son of Poseidon. He was abandoned by his father because of an oath made by the Big Three (Zeus, Poseidon and Hades) to not father any more children after World War II, since the resulting demigods are too powerful and have potential for great bloodshed (in-universe, World War II had been a fight between children of the Big Three). However, all three gods have children anyway. Percy's journey turns even more electrifying when he discovers that numerous people and ancient monsters are trying to kill him due to his status as a demigod, latent strength, and growing influence in the Greek world. Percy also finds out that there are even more demigods like him in Camp Half-Blood, a training camp in Long Island.</div>
+          <div class="p-3" style="font-size: 110%;">With his friend (and eventual romantic interest) Annabeth Chase, and his best friend and companion Grover Underwood (a satyr who Percy finds out is actually his protector), his journey across the frightening mystic worlds begins. Percy soon finds himself fulfilling extraordinary quests, prophecies, and fighting battles with and for the gods against the rising threat of Kronos. He also find himself at a crossroads: either he helps in the destruction of the world, or in preserving it.</div>
+        </div>
+      </div>
+    </div>
+    <div id="pj1" class="carousel-item">
+      <img src="bgimg/sorted.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="pj-1" class="row">
+          <h1 style="font-size: 400%;">The Lightning Thief</h1>
+          <div class="col-sm-4 p-3 text-white" style="font-size: 120%;"><img src="books/pj1.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Philosopher's Stone"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>If my life is going to mean anything, I have to live it myself.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Percy Jackson in <cite title="Source Title">The Lightning Thief</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Always have more than one plan</li>
+                <li>Never give up, even if the road ahead seems dark and the future seems bleak</li>
+                <li>Trust your friends and be loyal</li>
+                <li>Just because things aren’t perfect doesn’t mean they can’t be fixed</li>
+                <li>Even heroes drool in their sleep</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pj2" class="carousel-item">
+      <img src="bgimg/percy_vs_ares.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="pj-2" class="row">
+          <h1 style="font-size: 400%;">The Sea of Monsters</h1>
+          <div class="col-sm-4 p-3 text-white" style="font-size: 120%;"><img src="books/pj2.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Chamber of Secrets"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>If there's one thing I've learned over the eons, it's that you can't give up on your family, no matter how tempting they make it.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Hermes in <cite title="Source Title">The Sea of Monsters</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Carry yourself with confidence</li>
+                <li>Expect the unexpected</li>
+                <li>Don’t butt heads with people you don’t know</li>
+                <li>Everyone has a hero in them. They just have to find it</li>
+                <li>There is magic in the world, and it’s a lot closer than you think</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div> 
+    </div>
+    <div id="pj3" class="carousel-item" style="text-shadow: 2px 2px 4px #000000;">
+      <img src="bgimg/oracle.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="pj-3" class="row">
+          <h1 style="font-size: 400%;">The Titan's Curse</h1>
+          <div class="col-sm-4 p-3 text-white" style="font-size: 120%;"><img src="books/pj3.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Prisoner of Azkaban"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>There is always a way out for those clever enough to find it.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Athena in <cite title="Source Title">The Titan's Curse</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Sometimes our greatest flaws are our greatest strengths</li>
+                <li>You might feel like you don't fit in, but you always find the right people to hang out with</li>
+                <li>You don't need to be a demigod to make a difference</li>
+                <li>When push comes to shove, you can be a hero</li>
+                <li>The children of Hades aren't all that bad</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>  
+    </div>
+    <div id="pj4" class="carousel-item">
+      <img src="bgimg/trio.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="pj-4" class="row">
+          <h1 style="font-size: 400%;">The Battle of the Labyrinth</h1>
+          <div class="col-sm-4 p-3 text-white" style="font-size: 120%;"><img src="books/pj4.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Goblet of Fire"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>People are more difficult to work with than machines. And when you break a person, he can't be fixed.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Hephaestus in <cite title="Source Title">The Battle of the Labyrinth</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Diversity is at the root of empathy</li>
+                <li>You can find great friends in unlikely places </li>
+                <li>To understand the present and future, you must understand the past </li>
+                <li>You're braver than you think</li>
+                <li>Icarus...</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>  
+    </div>
+    <div id="pj5" class="carousel-item">
+      <img src="bgimg/battle_of_manhatten.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="pj-5" class="row">
+          <h1 style="font-size: 400%;">The Last Olympian</h1>
+          <div class="col-sm-4 p-3 text-white" style="font-size: 120%;"><img src="books/pj5.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Order of the Phoenix"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 120%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>With great power... comes great need to take a nap. Wake me up later.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Nico di Angelo in <cite title="Source Title">The Last Olympian</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Not everyone has the best intentions</li>
+                <li>Sometimes believing in yourself can be hard</li>
+                <li>Even the strongest cry sometimes</li>
+                <li>Apply what you have learned</li>
+                <li>Nico is the best... Period</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Carousel HOO -->
+<div id="demo2" class="carousel slide" data-bs-ride="carousel" data-bs-ride="10000"  style="font-family: 'Times New Roman', Times, serif;">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="5"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner" id="hoo" style="text-shadow: 4px 4px 8px #000000; letter-spacing: 1px;">
+    <div id="hoo0" class="carousel-item active">
+      <img src="bgimg/hoo.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hoo-0" class="row">
+          <h1 style="font-size: 400%;">Heroes of Olympus</h1> <br><br>
+          <div class="p-3" style="font-size: 150%;">The Heroes of Olympus is centered around a prophecy, introduced in The Last Olympian, that predicted seven demigods would unite to protect the world from an awakening new enemy, Gaia. Demigods from both the Greek camp, Camp Half-Blood, and a newfound Roman camp, Camp Jupiter, unite to save the world from being destroyed by the terrifying Earth Goddess, Gaia. The prophecy reads:</div>
+          <div class="p-3" style="font-size: 150%;"> <pre style="font-family: 'Times New Roman', Times, serif; font-style: italic;">Seven half-bloods shall answer the call,
+To storm or fire, the world must fall.
+An oath to keep with a final breath,
+And foes bear arms to the Doors of Death.<pre> </div>
+        </div>
+      </div>
+    </div>
+    <div id="hoo1" class="carousel-item">
+      <img src="bgimg/dragon.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hoo-1" class="row">
+          <h1 style="font-size: 400%;">The Lost Hero</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="books/hoo1.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Philosopher's Stone"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 150%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>You must forge your own path for it to mean anything.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Jason Grace in <cite title="Source Title">The Lost Hero</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Take Action – Immediately</li>
+                <li>You’ll be surprised by people</li>
+                <li>Make every moment count</li>
+                <li>Appreciate your journey</li>
+                <li>Leo is the best... Period</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>
+    </div>
+    <div id="hoo2" class="carousel-item">
+      <img src="bgimg/camp.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hoo-2" class="row">
+          <h1 style="font-size: 400%;">The Son of Neptune</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="books/hoo2.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Chamber of Secrets"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 150%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>Life is only precious because it ends, kid.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Mars in <cite title="Source Title">The Son of Neptune</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Cherish what you have in your life</li>
+                <li>Patience is a powerful tool for success</li>
+                <li>Choose kindness all the time</li>
+                <li>You’ll be scared to do things, but do them anyway</li>
+                <li>Frank is the best... Period</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div> 
+    </div>
+    <div id="hoo3" class="carousel-item">
+      <img src="bgimg/moa.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hoo-3" class="row">
+          <h1 style="font-size: 400%;">The Mark of Athena</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="books/hoo3.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Prisoner of Azkaban"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 150%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>I try not to think, it interferes with being nuts.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Leo Valdez in <cite title="Source Title">The Mark of Athena</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Play well with others</li>
+                <li>Only those who know how to adapt survive</li>
+                <li>Move out of your comfort zone</li>
+                <li>Stay curious</li>
+                <li>Annabeth's word is gold...</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>  
+    </div>
+    <div id="hoo4" class="carousel-item">
+      <img src="bgimg/tartarus.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hoo-4" class="row">
+          <h1 style="font-size: 400%;">The House of Hades</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="books/hoo4.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Goblet of Fire"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 150%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>But magic is neither good nor evil. It is a tool, like a knife. Is a knife evil? Only if the wielder is evil.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+                Annabeth Chase in <cite title="Source Title">The House of Hades</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Time is your ally. Use it wisely</li>
+                <li>Beware of excesses</li>
+                <li>Even the strongest cry sometimes</li>
+                <li>Apply what you have learned</li>
+                <li>Try not to fall into Tartarus... it's real bad down there</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>  
+    </div>
+    <div id="hoo5" class="carousel-item">
+      <img src="bgimg/battle_of_manhatten.png" class="d-block" style="width: 100%; height: 745px;">
+      <div class="carousel-caption">
+        <div id="hoo-5" class="row">
+          <h1 style="font-size: 400%;">The Blood of Olympus</h1>
+          <div class="col-sm-4 p-3 text-white"><img src="books/hoo5.png" class="rounded mx-auto d-block img-fluid" alt="Harry Potter and the Order of the Phoenix"></div>
+          <div class="col-sm-8 p-3 text-white" style="font-size: 150%;">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <q>Hey, I’m a Poseidon kid, I can’t drown. And neither can my pancakes.</q>
+              </blockquote>
+              <figcaption class="blockquote-footer text-white">
+               Percy Jackson in <cite title="Source Title">The Blood of Olympus</cite>
+              </figcaption>
+            </figure>
+            <br>
+            <p>
+              <ul>
+                <li>Teamwork will get the job done no matter how difficult it is</li>
+                <li>Family is more than just blood</li>
+                <li>Love with all your might</li>
+                <li>Give it time and you’ll get it right eventually</li>
+                <li>Dragons are a great mode of transport</li>
+              </ul>
+            </p>
+          </div>        
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+</body>
+</html>
